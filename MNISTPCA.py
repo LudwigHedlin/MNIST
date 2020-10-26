@@ -37,7 +37,7 @@ x_ = df.loc[:,df.columns != "label"].values/255
 y_ = df.loc[:,"label"].values
 
 #PCA analysis
-n_components = 64
+n_components = 100
 pca = PCA(n_components)
 x_= pca.fit_transform(x_)
 
